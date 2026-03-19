@@ -19,7 +19,7 @@ html {
     --jdo-gold:#f5c842;
     --jdo-gold-dim:rgba(245, 200, 66, 0.12);
     --jdo-bg: #1B1E1C;
-    --jdo-card:#162030;
+    --jdo-card:#2c352e;
     --jdo-card-border:rgba(255, 255, 255, 0.07);
     --jdo-text:#e8edf2;
     --jdo-muted:rgba(232, 237, 242, 0.5);
@@ -84,6 +84,7 @@ html {
     border-radius: 50%;
     border: 1px solid var(--jdo-card-border);
     background: rgba(15, 25, 35, 0.92);
+    background-color: rgba(3, 82, 41, 0.226);
     color: var(--jdo-text);
     cursor: pointer;
     display: flex;
