@@ -1,5 +1,14 @@
-html {
+html, body {
   background-color: #1B1E1C;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* — Reset escopado para não vazar pro resto do site — */
@@ -63,7 +72,7 @@ html {
   /* — Track de scroll — */
   .jdo-track {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 4px 20px 8px;
@@ -100,12 +109,21 @@ html {
     border-color: var(--jdo-green);
     box-shadow: 0 0 12px var(--jdo-green-glow);
   }
-  .jdo-nav-prev { left: 4px; }
-  .jdo-nav-next { right: 4px; }
+  
+  .jdo-nav-prev { left: 8px; }
+  .jdo-nav-next { right: 8px; }
+
+  .jdo-nav {
+    /* ...mantém o resto... */
+    width: 40px;
+    height: 40px;
+    background: rgba(15, 25, 35, 0.85);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  }
  
   /* — Card individual — */
   .jdo-card {
-    flex: 0 0 320px;
+    flex: 0 0 380px;
     background: var(--jdo-card);
     border: 1px solid var(--jdo-card-border);
     border-radius: 12px;
@@ -151,7 +169,7 @@ html {
  
   /* — Body do card: lista de eventos — */
   .jdo-card-body {
-    padding: 12px 5px;
+    padding: 18px 10px;
     flex: 1;
   }
   .jdo-event-row {
